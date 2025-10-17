@@ -1,0 +1,10 @@
+
+title: "Edison Moreno Cárdenas"
+description: "Investigador en Telecomunicaciones, IoT y Energías Renovables"
+email: contacto@edisonmoreno.com
+url: "https://edisonmoreno.github.io"
+baseurl: "" # dejar vacío si es una página tipo usuario.github.io
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
