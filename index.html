@@ -9,116 +9,118 @@
       font-family: "Helvetica Neue", Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fafafa;
+      background-color: #ffffff;
       color: #222;
       line-height: 1.6;
     }
 
+    /* Header */
     header {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      background-color: #003366;
-      color: white;
-      padding: 25px 40px;
-      text-align: left;
-    }
-
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-right: 25px;
-      border: 3px solid #fff;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      padding: 25px 60px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2em;
-      letter-spacing: 1px;
-    }
-
-    header h2 {
-      font-weight: normal;
-      font-size: 1em;
-      margin: 8px 0 0;
-    }
-
-    nav {
-      background: #f4f4f4;
-      padding: 10px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
+      font-size: 1.8em;
+      font-weight: bold;
     }
 
     nav a {
       text-decoration: none;
-      color: #003366;
-      margin: 0 15px;
-      font-weight: bold;
+      color: #000;
+      margin-left: 25px;
+      font-weight: 500;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+    /* Layout */
+    .main {
+      display: flex;
+      justify-content: center;
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 40px;
+      gap: 60px;
     }
 
-    .contact {
-      text-align: center;
-      margin-bottom: 25px;
+    /* Sidebar (photo + contact) */
+    .sidebar {
+      flex: 0 0 260px;
+      text-align: left;
+    }
+
+    .sidebar img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar p {
+      margin: 5px 0;
       font-size: 0.95em;
     }
 
-    .contact a {
+    .sidebar a {
       color: #003366;
       text-decoration: none;
-      margin: 0 8px;
+      font-weight: bold;
     }
 
-    .contact a:hover {
+    .sidebar a:hover {
       text-decoration: underline;
     }
 
-    .section {
-      margin-bottom: 40px;
+    /* Content */
+    .content {
+      flex: 1;
+      font-size: 1em;
+    }
+
+    .content p {
+      margin-bottom: 18px;
+    }
+
+    .content strong {
+      color: #000;
     }
 
     footer {
-      background: #003366;
-      color: white;
       text-align: center;
-      padding: 15px 10px;
       font-size: 0.9em;
+      color: #666;
       margin-top: 40px;
+      padding: 20px 10px;
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="edison.jpg" alt="Edison Moreno Cárdenas" class="profile-pic">
-    <div>
-      <h1>Edison Moreno-Cárdenas</h1>
-      <h2>Escuela Profesional de Ingeniería Electrónica<br>
-      Universidad Nacional de San Antonio Abad del Cusco (UNSAAC), Perú</h2>
-    </div>
+    <h1>Edison Moreno-Cárdenas</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">CV</a>
+      <a href="#">Research</a>
+      <a href="#">Teaching</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">CV</a>
-    <a href="#">Research</a>
-    <a href="#">Teaching</a>
-  </nav>
-
-  <div class="container">
-    <div class="contact">
-      <p>📍 Cusco, Perú | ✉️ edison.moreno@unsaac.edu.pe</p>
+  <div class="main">
+    <!-- Left column -->
+    <div class="sidebar">
+      <img src="edison.jpg" alt="Edison Moreno Cárdenas">
+      <p><strong>Professional School of Electronic Engineering</strong></p>
+      <p>Faculty of Electrical, Electronic, Computer and Mechanical Engineering</p>
+      <p>San Antonio Abad National University of Cusco</p>
+      <p>Cusco, 83000</p>
+      <p>edison.moreno.cardenas@ieee.org</p>
       <p>
         <a href="https://scholar.google.com/citations?user=rDskVUYAAAAJ&hl=es&oi=ao" target="_blank">Google Scholar</a> |
         <a href="https://www.linkedin.com/in/edisonmorenocardenas/" target="_blank">LinkedIn</a> |
@@ -126,61 +128,31 @@
       </p>
     </div>
 
-    <!-- HOME SECTION -->
-    <div class="section">
-      <h2>Home</h2>
+    <!-- Right column -->
+    <div class="content">
       <p>
-        <strong>Professional School of Electronic Engineering</strong><br>
-        Faculty of Electrical, Electronic, Computer and Mechanical Engineering<br>
-        <em>San Antonio Abad National University of Cusco</em><br>
-        Cusco, 83000<br>
-        <a href="mailto:edison.moreno.cardenas@ieee.org" style="color:#003366;">edison.moreno.cardenas@ieee.org</a>
-      </p>
-
-      <p style="text-align: justify;">
-        I am currently a <strong>Professor and Researcher in Telecommunications, Networks and Business Models</strong>.
-        My research focuses on telecommunications economics, network theory and innovative business models,
-        with applications in <strong>5G and 6G networks</strong> and the <strong>Internet of Things (IoT)</strong>.
-        In addition, I explore emerging technologies such as <em>Network Slicing</em> and
+        I am currently a <strong>Professor and Researcher in Telecommunications, Networks and Business Models</strong>. 
+        My research focuses on telecommunications economics, network theory and innovative business models, with 
+        applications in <strong>5G and 6G networks</strong> and the <strong>Internet of Things (IoT)</strong>. 
+        In addition, I explore emerging technologies such as <em>Network Slicing</em> and 
         <em>game theory applied to mobile networks</em>.
       </p>
-
-      <p style="text-align: justify;">
-        I hold a <strong>PhD in Telecommunications</strong>, a <strong>Master's Degree in Strategic Telecommunications Management</strong>,
-        and an <strong>MBA in Business Management</strong>. I have worked on research projects in Spain at the
-        <em>Polytechnic University of Valencia</em>, in France at <em>IMT Atlantique</em>, and in Peru.
-        I have also taught at the <em>Salesian Polytechnic University</em>.
-      </p>
-
-      <p style="text-align: justify;">
-        If you are interested in collaborating on research on <strong>5G, IoT, or telecommunications</strong>,
-        please do not hesitate to contact me.
-      </p>
-    </div>
-
-    <!-- ACADEMIC BACKGROUND -->
-    <div class="section">
-      <h2>Academic Background</h2>
-      <ul>
-        <li>Ph.D. in Telecommunications Engineering, <strong>Universitat Politècnica de València</strong>, Spain.</li>
-        <li>M.Sc. in Strategic Management of Telecommunications, <strong>Universidad Nacional Mayor de San Marcos</strong>, Peru.</li>
-        <li>MBA, <strong>Universitat de València</strong>, Spain.</li>
-        <li>B.Sc. in Electronic Engineering, <strong>UNSAAC</strong>, Peru.</li>
-      </ul>
-    </div>
-
-    <!-- TEACHING -->
-    <div class="section">
-      <h2>Teaching</h2>
       <p>
-        I currently teach undergraduate and graduate courses on <em>Electronic Circuits, Signals and Systems,</em> 
-        and <em>Applied Research</em>.
+        I hold a <strong>PhD in Telecommunications</strong>, a <strong>Master's Degree in Strategic Telecommunications Management</strong>, 
+        and an <strong>MBA in Business Management</strong>. I have worked on research projects in 
+        <strong>Spain (Polytechnic University of Valencia)</strong>, <strong>France (IMT Atlantique)</strong>, and <strong>Peru</strong>. 
+        I have also taught at the <strong>Salesian Polytechnic University</strong>.
+      </p>
+      <p>
+        If you are interested in collaborating on research on <strong>5G, IoT, or telecommunications</strong>, 
+        please do not hesitate to contact me.
       </p>
     </div>
   </div>
 
   <footer>
-    © 2025 Edison Moreno Cárdenas | Designed for GitHub Pages
+    © 2025 Edison Moreno Cárdenas | Built for GitHub Pages
   </footer>
+
 </body>
 </html>
