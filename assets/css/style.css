@@ -105,18 +105,23 @@ footer {
 }
 
 
-/* Centrar el contenido de la sección projects */
-#projects .container {
-    max-width: 900px;   /* Limita el ancho para que no ocupe toda la pantalla */
-    margin: 50px auto;  /* Centrado horizontal y con espacio superior e inferior */
-    padding: 20px;      /* Espacio interno */
-    text-align: left;   /* Mantiene los párrafos alineados a la izquierda dentro del contenedor */
+/* Sección Projects centrada */
+#projects {
+    max-width: 900px;
+    margin: 50px auto;  /* Centrado horizontal y separación superior/inferior */
+    padding: 20px;
 }
 
-#projects h1, #projects h2 {
-    text-align: center; /* Centra los títulos */
+#projects h1 {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-#projects .project {
-    margin-bottom: 40px; /* Espacio entre proyectos */
+#projects .projects-list li {
+    margin-bottom: 30px;  /* Espacio entre proyectos */
+}
+
+#projects .projects-list p {
+    margin-top: 10px;
+    line-height: 1.6;  /* Mejor legibilidad */
 }
