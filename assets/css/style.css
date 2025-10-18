@@ -103,3 +103,20 @@ footer {
   padding: 20px 10px;
   border-top: 1px solid #ddd;
 }
+
+
+/* Centrar el contenido de la sección projects */
+#projects .container {
+    max-width: 900px;   /* Limita el ancho para que no ocupe toda la pantalla */
+    margin: 50px auto;  /* Centrado horizontal y con espacio superior e inferior */
+    padding: 20px;      /* Espacio interno */
+    text-align: left;   /* Mantiene los párrafos alineados a la izquierda dentro del contenedor */
+}
+
+#projects h1, #projects h2 {
+    text-align: center; /* Centra los títulos */
+}
+
+#projects .project {
+    margin-bottom: 40px; /* Espacio entre proyectos */
+}
