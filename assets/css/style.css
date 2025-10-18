@@ -1,5 +1,6 @@
 /* assets/css/style.css */
 
+/* === GENERAL === */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   margin: 0;
@@ -9,7 +10,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* === HEADER === */
 header {
   display: flex;
   justify-content: space-between;
@@ -23,10 +24,10 @@ header h1 {
   font-weight: bold;
 }
 
-/* Navegación principal */
+/* === NAVEGACIÓN PRINCIPAL === */
 .main-nav {
   display: flex;
-  gap: 30px; /* Espacio entre enlaces */
+  gap: 30px;
 }
 
 .main-nav a {
@@ -43,8 +44,7 @@ header h1 {
   border-radius: 4px;
 }
 
-
-/* Layout */
+/* === LAYOUT PRINCIPAL === */
 .main {
   display: flex;
   justify-content: center;
@@ -54,7 +54,7 @@ header h1 {
   gap: 60px;
 }
 
-/* Sidebar (photo + contact) */
+/* === SIDEBAR (Foto + Contacto) === */
 .sidebar {
   flex: 0 0 260px;
   text-align: left;
@@ -81,7 +81,7 @@ header h1 {
   text-decoration: underline;
 }
 
-/* Content */
+/* === CONTENIDO PRINCIPAL === */
 .content {
   flex: 1;
   font-size: 1em;
@@ -95,6 +95,7 @@ header h1 {
   color: #000;
 }
 
+/* === FOOTER === */
 footer {
   text-align: center;
   font-size: 0.9em;
@@ -104,45 +105,110 @@ footer {
   border-top: 1px solid #ddd;
 }
 
-
-/* Sección Projects centrada */
+/* === SECCIÓN PROJECTS === */
 #projects {
-    max-width: 900px;
-    margin: 50px auto;  /* Centrado horizontal y separación superior/inferior */
-    padding: 20px;
+  max-width: 900px;
+  margin: 80px auto; /* Centrado vertical y horizontal */
+  padding: 40px 60px;
+  background-color: #f8f9fb;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 #projects h1 {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: #003366;
+}
+
+#projects .projects-list {
+  list-style-type: none;
+  padding: 0;
 }
 
 #projects .projects-list li {
-    margin-bottom: 30px;  /* Espacio entre proyectos */
+  margin-bottom: 30px;
+  background: #ffffff;
+  border-left: 4px solid #003366;
+  padding: 20px 25px;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#projects .projects-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+#projects .projects-list h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #003366;
+}
+
+#projects .projects-list h4 {
+  margin: 0 0 10px;
+  font-style: italic;
+  color: #555;
 }
 
 #projects .projects-list p {
-    margin-top: 10px;
-    line-height: 1.6;  /* Mejor legibilidad */
+  margin-top: 10px;
+  line-height: 1.6;
+  text-align: justify;
 }
 
-/* Sección Awards centrada */
+/* === SECCIÓN AWARDS === */
 #awards {
-    max-width: 900px;
-    margin: 50px auto;  /* Centrado horizontal y separación superior/inferior */
-    padding: 20px;
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px 60px;
+  background-color: #f8f9fb;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 #awards h1 {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: #003366;
+}
+
+#awards .awards-list {
+  list-style-type: none;
+  padding: 0;
 }
 
 #awards .awards-list li {
-    margin-bottom: 25px;  /* Espacio entre premios */
+  margin-bottom: 25px;
+  background: #ffffff;
+  border-left: 4px solid #003366;
+  padding: 20px 25px;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#awards .awards-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+#awards .awards-list h3 {
+  margin: 0 0 10px;
+  font-size: 1.1em;
+  color: #003366;
+}
+
+#awards .awards-list h4 {
+  margin: 0 0 10px;
+  font-style: italic;
+  color: #555;
 }
 
 #awards .awards-list p {
-    margin-top: 5px;
-    line-height: 1.6;  /* Mejor legibilidad */
+  margin-top: 5px;
+  line-height: 1.6;
+  text-align: justify;
 }
