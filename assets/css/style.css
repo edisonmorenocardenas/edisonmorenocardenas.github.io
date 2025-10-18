@@ -125,3 +125,24 @@ footer {
     margin-top: 10px;
     line-height: 1.6;  /* Mejor legibilidad */
 }
+
+/* Sección Awards centrada */
+#awards {
+    max-width: 900px;
+    margin: 50px auto;  /* Centrado horizontal y separación superior/inferior */
+    padding: 20px;
+}
+
+#awards h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#awards .awards-list li {
+    margin-bottom: 25px;  /* Espacio entre premios */
+}
+
+#awards .awards-list p {
+    margin-top: 5px;
+    line-height: 1.6;  /* Mejor legibilidad */
+}
