@@ -1,5 +1,3 @@
-/* assets/css/style.css */
-
 /* === GENERAL === */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -48,16 +46,21 @@ header h1 {
 .main {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   max-width: 1100px;
-  margin: 30px auto;
+  margin: 40px auto;
   padding: 0 40px;
   gap: 60px;
 }
 
-/* === SIDEBAR (Foto + Contacto) === */
+/* === SIDEBAR FIJA === */
 .sidebar {
   flex: 0 0 260px;
+  position: sticky;        /* <-- clave para mantenerla visible */
+  top: 40px;               /* distancia desde la parte superior */
+  align-self: flex-start;  /* asegura alineación correcta */
   text-align: left;
+  height: fit-content;     /* se adapta al contenido */
 }
 
 .sidebar img {
@@ -89,6 +92,7 @@ header h1 {
 
 .content p {
   margin-bottom: 18px;
+  text-align: justify;
 }
 
 .content strong {
@@ -103,112 +107,4 @@ footer {
   margin-top: 40px;
   padding: 20px 10px;
   border-top: 1px solid #ddd;
-}
-
-/* === SECCIÓN PROJECTS === */
-#projects {
-  max-width: 900px;
-  margin: 80px auto; /* Centrado vertical y horizontal */
-  padding: 40px 60px;
-  background-color: #f8f9fb;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-
-#projects h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2em;
-  color: #003366;
-}
-
-#projects .projects-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-#projects .projects-list li {
-  margin-bottom: 30px;
-  background: #ffffff;
-  border-left: 4px solid #003366;
-  padding: 20px 25px;
-  border-radius: 6px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#projects .projects-list li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-#projects .projects-list h3 {
-  margin: 0 0 10px;
-  font-size: 1.2em;
-  color: #003366;
-}
-
-#projects .projects-list h4 {
-  margin: 0 0 10px;
-  font-style: italic;
-  color: #555;
-}
-
-#projects .projects-list p {
-  margin-top: 10px;
-  line-height: 1.6;
-  text-align: justify;
-}
-
-/* === SECCIÓN AWARDS === */
-#awards {
-  max-width: 900px;
-  margin: 80px auto;
-  padding: 40px 60px;
-  background-color: #f8f9fb;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-
-#awards h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2em;
-  color: #003366;
-}
-
-#awards .awards-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-#awards .awards-list li {
-  margin-bottom: 25px;
-  background: #ffffff;
-  border-left: 4px solid #003366;
-  padding: 20px 25px;
-  border-radius: 6px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#awards .awards-list li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-#awards .awards-list h3 {
-  margin: 0 0 10px;
-  font-size: 1.1em;
-  color: #003366;
-}
-
-#awards .awards-list h4 {
-  margin: 0 0 10px;
-  font-style: italic;
-  color: #555;
-}
-
-#awards .awards-list p {
-  margin-top: 5px;
-  line-height: 1.6;
-  text-align: justify;
 }
